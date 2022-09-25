@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <title>MOL</title>
+</head>
+
+<body>
+  <h1>Список картриджей</h1>
+  <%  cartridge_list.forEach(function(cartridge){ %>
+  <table style="width:100%">
+    <tr>
+      <td>
+        <p><%= cartridge.name %></p>
+      </td>
+      <td style="width:30%">
+        <a href="/cartridge/<%= cartridge.tmc %>">
+          <button type="button" name="button">HEHE</button>
+        </a>
+      </td>
+    </tr>
+  </table>
+  <% }); %>
+</body>
+
+</html>

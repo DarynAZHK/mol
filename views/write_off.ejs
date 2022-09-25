@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>СПИСЫВАЕМ <%= cartridge.cartridge_name %></h1>
+    <form action="/cartridge/wf/<%= cartridge.cartridge_tmc %>" method="post">
+      <input type="text" name="amount">Количество списываемого материала
+      <input type="text" name="date">Дата
+      <input type="text" name="upravlenie">Управление
+      <input type="text" name="whom">Кому списываем
+      <input type="text" name="identification">подпись
+      <button type="submit" name="button">Списать</button>
+    </form>
+  </body>
+</html>
